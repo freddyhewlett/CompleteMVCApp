@@ -1,0 +1,15 @@
+D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHData\FH.Data\bin\Debug\net6.0\FH.Data.deps.json
+D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHData\FH.Data\bin\Debug\net6.0\FH.Data.dll
+D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHData\FH.Data\bin\Debug\net6.0\FH.Data.pdb
+D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHData\FH.Data\bin\Debug\net6.0\FH.Business.dll
+D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHData\FH.Data\bin\Debug\net6.0\FH.Business.pdb
+D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHData\FH.Data\obj\Debug\net6.0\FH.Data.csproj.AssemblyReference.cache
+D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHData\FH.Data\obj\Debug\net6.0\FH.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHData\FH.Data\obj\Debug\net6.0\FH.Data.AssemblyInfoInputs.cache
+D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHData\FH.Data\obj\Debug\net6.0\FH.Data.AssemblyInfo.cs
+D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHData\FH.Data\obj\Debug\net6.0\FH.Data.csproj.CoreCompileInputs.cache
+D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHData\FH.Data\obj\Debug\net6.0\FH.Data.csproj.CopyComplete
+D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHData\FH.Data\obj\Debug\net6.0\FH.Data.dll
+D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHData\FH.Data\obj\Debug\net6.0\refint\FH.Data.dll
+D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHData\FH.Data\obj\Debug\net6.0\FH.Data.pdb
+D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHData\FH.Data\obj\Debug\net6.0\ref\FH.Data.dll
