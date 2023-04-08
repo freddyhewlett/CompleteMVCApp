@@ -9,6 +9,10 @@ namespace FH.App.ViewModels
         [Key]
         public Guid Id { get; set; }
 
+        [Required(ErrorMessage = "O campo {0} é obrigatório")]
+        [DisplayName("Desenvolvedor")]
+        public Guid DeveloperId { get; set; }
+
         [DisplayName("Nome")]
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         [StringLength(200, ErrorMessage = "O campo {0} precisa ter entre {2} e {1} caracteres", MinimumLength = 2)]
@@ -33,6 +37,9 @@ namespace FH.App.ViewModels
         [DisplayName("Ativo?")]
         public bool Active { get; set; }
 
+        [DisplayName("Desenvolvedor")]
         public DeveloperViewModel Developer { get; set; }
+
+        public IEnumerable<DeveloperViewModel> Developers { get; set; }
     }
 }
