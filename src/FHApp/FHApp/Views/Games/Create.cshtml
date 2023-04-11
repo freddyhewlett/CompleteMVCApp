@@ -1,20 +1,22 @@
 ﻿@model FH.App.ViewModels.GameViewModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Cadastrar Jogo";
 }
 
-<h1>Create</h1>
+<h3 style="padding-top: 50px">@ViewData["Title"]</h3>
 
-<h4>GameViewModel</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form enctype="multipart/form-data" asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="DeveloperId" class="control-label"></label>
-                <select asp-for="DeveloperId" class ="form-control" asp-items="ViewBag.DeveloperId"></select>
+                <select asp-for="DeveloperId" class ="form-control" asp-items="@(new SelectList(Model.Developers, "Id", "Name"))">
+                    <option></option>
+                </select>
+                <span asp-validation-for="DeveloperId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Name" class="control-label"></label>
@@ -27,9 +29,13 @@
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Image" class="control-label"></label>
-                <input asp-for="Image" class="form-control" />
-                <span asp-validation-for="Image" class="text-danger"></span>
+                <label asp-for="ImageUpload" class="control-label"></label>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="ImageUpload" asp-for="ImageUpload" />
+                    <label data-browse="Procurar" style="width: 400px" class="custom-file-label" for="ImageUpload"></label>
+                    <label style="display: none" id="img_nome"></label>
+                </div>
+                <span asp-validation-for="ImageUpload" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Value" class="control-label"></label>
@@ -43,15 +49,23 @@
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
+                <a class="btn btn-info" asp-action="Index">Voltar</a>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script>
+        $("#ImageUpload").change(function(){
+            $("#img_nome").text(this.files[0].name);
+            $("#img_nome")[0].style.display = 'block';
+        });
+
+        $("#ImageUpload").attr("data-val", "true");
+        $("#ImageUpload").attr("data-val-required", "Preencha o campo Imagem");
+    </script>
 }

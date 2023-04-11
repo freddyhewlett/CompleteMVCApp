@@ -11,5 +11,6 @@ namespace FH.App.Data
         {
         }
         public DbSet<FH.App.ViewModels.GameViewModel> GameViewModel { get; set; }
+        public DbSet<FH.App.ViewModels.AddressViewModel> AddressViewModel { get; set; }
     }
 }

@@ -279,3 +279,4 @@ D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHApp\FHApp\bin\Debug\n
 D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHApp\FHApp\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHApp\FHApp\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHApp\FHApp\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHApp\FHApp\bin\Debug\net6.0\libman.json
