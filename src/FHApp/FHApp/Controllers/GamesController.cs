@@ -3,6 +3,7 @@ using FH.App.ViewModels;
 using FH.Business.Interfaces;
 using AutoMapper;
 using FH.Business.Models;
+using System.Net;
 
 namespace FH.App.Controllers
 {
@@ -53,8 +54,17 @@ namespace FH.App.Controllers
                 return View(gameViewModel);
             }
 
+            var imgPrefix = Guid.NewGuid() + "_";
+
+            if(! await UploadFile(gameViewModel.ImageUpload, imgPrefix))
+            {
+                return View(gameViewModel);
+            }
+
+            gameViewModel.Image = imgPrefix + gameViewModel.ImageUpload.FileName;
             await _gameRepository.Add(_mapper.Map<Game>(gameViewModel));
-            return View(gameViewModel);
+
+            return RedirectToAction(nameof(Index));
         }
 
         public async Task<IActionResult> Edit(Guid id)
@@ -78,13 +88,34 @@ namespace FH.App.Controllers
                 return NotFound();
             }
 
+            var gameUpdate = await GetGame(id);
+            gameViewModel.Developer = gameUpdate.Developer;
+            gameViewModel.Image = gameUpdate.Image;
+
             if (!ModelState.IsValid)
             {
                 return View(gameViewModel);
                 
             }
 
-            await _gameRepository.Update(_mapper.Map<Game>(gameViewModel));
+            if(gameViewModel.ImageUpload != null)
+            {
+                var imgPrefix = Guid.NewGuid() + "_";
+
+                if (!await UploadFile(gameViewModel.ImageUpload, imgPrefix))
+                {
+                    return View(gameViewModel);
+                }
+
+                gameUpdate.Image = imgPrefix + gameViewModel.ImageUpload.FileName;
+            }
+
+            gameUpdate.Name = gameViewModel.Name;
+            gameUpdate.Description = gameViewModel.Description;
+            gameUpdate.Value = gameViewModel.Value;
+            gameUpdate.Active = gameViewModel.Active;
+
+            await _gameRepository.Update(_mapper.Map<Game>(gameUpdate));
 
             return RedirectToAction(nameof(Index));
         }
@@ -128,6 +159,26 @@ namespace FH.App.Controllers
         {
             gameViewModel.Developers = _mapper.Map<IEnumerable<DeveloperViewModel>>(await _developerRepository.GetAll());
             return gameViewModel;
+        }
+
+        private async Task<bool> UploadFile(IFormFile file, string imgPrefix)
+        {
+            if (file.Length <= 0) return false;
+
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", imgPrefix + file.FileName);
+
+            if(System.IO.File.Exists(path))
+            {
+                ModelState.AddModelError(string.Empty, "Já existe um arquivo com este nome!");
+                return false;
+            }
+
+            using (var stream = new FileStream(path, FileMode.Create))
+            {
+                await file.CopyToAsync(stream);
+            }
+
+            return true;
         }
     }
 }

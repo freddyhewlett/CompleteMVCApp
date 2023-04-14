@@ -16,3 +16,19 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    height: 60px;
+    line-height: 60px;
+}
+
+input,
+select,
+file,
+textarea{
+    max-width: 400px;
+}

@@ -13,6 +13,8 @@ namespace FH.Data.Context
 
         public DataDbContext(DbContextOptions options) : base(options)
         {
+            ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
+            ChangeTracker.AutoDetectChangesEnabled = false;
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
