@@ -1,4 +1,5 @@
-﻿using FH.Business.Models;
+﻿using FH.App.Extensions;
+using FH.Business.Models;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -29,6 +30,7 @@ namespace FH.App.ViewModels
 
         public string Image { get; set; }
 
+        [Currency]
         [DisplayName("Preço")]
         [Required(ErrorMessage = "O campo {0} é obrigatório")]
         public decimal Value { get; set; }
