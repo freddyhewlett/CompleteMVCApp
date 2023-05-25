@@ -43,6 +43,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2ZWxvcGVyc1xfQWRkcmVzcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Workplace/VS Community/CompleteMVC/CompleteMVCApp/src/FHApp/FHApp/Views/Developers/_AddressDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2ZWxvcGVyc1xfQWRkcmVzc0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Workplace/VS Community/CompleteMVC/CompleteMVCApp/src/FHApp/FHApp/Views/Games/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -61,6 +65,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Workplace/VS Community/CompleteMVC/CompleteMVCApp/src/FHApp/FHApp/Views/Games/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workplace/VS Community/CompleteMVC/CompleteMVCApp/src/FHApp/FHApp/Views/Games/_GameList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZXNcX0dhbWVMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Workplace/VS Community/CompleteMVC/CompleteMVCApp/src/FHApp/FHApp/Views/Home/Index.cshtml]
