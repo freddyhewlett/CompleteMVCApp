@@ -114,6 +114,18 @@ namespace FH.App.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        public async Task<IActionResult> UpdateAddress(Guid id)
+        {
+            var developer = await GetDeveloperAddress(id);
+
+            if (developer == null)
+            {
+                return NotFound();
+            }
+
+            return PartialView("_UpdateAddress", new DeveloperViewModel { Address = developer.Address });
+        }
+
         private async Task<DeveloperViewModel> GetDeveloperAddress(Guid id)
         {
             return _mapper.Map<DeveloperViewModel>(await _developerRepository.GetDeveloperAddress(id));

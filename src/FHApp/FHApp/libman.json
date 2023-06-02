@@ -20,6 +20,14 @@
     {
       "library": "bootstrap@5.2.3",
       "destination": "wwwroot/lib/bootstrap/"
+    },
+    {
+      "library": "jquery@3.3.1",
+      "destination": "wwwroot/jquery/"
+    },
+    {
+      "library": "twitter-bootstrap@4.3.1",
+      "destination": "wwwroot/twitter-bootstrap/"
     }
   ]
 }

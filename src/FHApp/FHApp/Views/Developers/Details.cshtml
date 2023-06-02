@@ -37,4 +37,33 @@
 </div>
 
 
-<partial name="_AddressDetails" />
+<div id="AddressTarget">
+    <partial name="_AddressDetails" />
+</div>
+
+<hr />
+<h4>Jogos</h4>
+<div>
+    <partial name="../Games/_GameList" model="@Model.Games" />
+</div>
+
+<div id="myModal" class="modal fade in">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div id="myModalContent"></div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+        <script>
+            $(document).ready(function () {
+                SetModal();
+            });
+        </script>
+
+}
