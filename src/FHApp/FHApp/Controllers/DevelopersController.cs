@@ -9,12 +9,14 @@ namespace FH.App.Controllers
     public class DevelopersController : BaseController
     {
         private readonly IDeveloperRepository _developerRepository;
+        private readonly IAddressRepository _addressRepository;
         private readonly IMapper _mapper;
 
-        public DevelopersController(IDeveloperRepository developerRepository, IMapper mapper)
+        public DevelopersController(IDeveloperRepository developerRepository, IMapper mapper, IAddressRepository addressRepository)
         {
             _developerRepository = developerRepository;
             _mapper = mapper;
+            _addressRepository = addressRepository;
         }
 
         public async Task<IActionResult> Index()
@@ -114,6 +116,18 @@ namespace FH.App.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        public async Task<IActionResult> GetAddress(Guid id)
+        {
+            var developer = await GetDeveloperAddress(id);
+
+            if (developer == null)
+            {
+                return NotFound();
+            }
+
+            return PartialView("_AddressDetails", developer);
+        }
+
         public async Task<IActionResult> UpdateAddress(Guid id)
         {
             var developer = await GetDeveloperAddress(id);
@@ -124,6 +138,22 @@ namespace FH.App.Controllers
             }
 
             return PartialView("_UpdateAddress", new DeveloperViewModel { Address = developer.Address });
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> UpdateAddress(DeveloperViewModel developerViewModel)
+        {
+            ModelState.Remove("Name");
+            ModelState.Remove("Document");
+
+            if (!ModelState.IsValid) return PartialView("_UpdateAddress", developerViewModel);
+
+            await _addressRepository.Update(_mapper.Map<Address>(developerViewModel.Address));
+
+            var url = Url.Action("GetAddress", "Developers", new { id = developerViewModel.Address.DeveloperId });
+
+            return Json(new { success = true, url });
         }
 
         private async Task<DeveloperViewModel> GetDeveloperAddress(Guid id)
