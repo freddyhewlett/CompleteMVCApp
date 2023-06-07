@@ -1,5 +1,7 @@
 D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHApp\FHApp\bin\Debug\net6.0\appsettings.Development.json
 D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHApp\FHApp\bin\Debug\net6.0\appsettings.json
+D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHApp\FHApp\bin\Debug\net6.0\appsettings.Production.json
+D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHApp\FHApp\bin\Debug\net6.0\appsettings.Staging.json
 D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHApp\FHApp\bin\Debug\net6.0\libman.json
 D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHApp\FHApp\bin\Debug\net6.0\FH.App.staticwebassets.runtime.json
 D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHApp\FHApp\bin\Debug\net6.0\FH.App.exe

@@ -19,11 +19,13 @@ namespace FH.App.Controllers
             _addressRepository = addressRepository;
         }
 
+        [Route("developer-list")]
         public async Task<IActionResult> Index()
         {
               return View(_mapper.Map<IEnumerable<DeveloperViewModel>>(await _developerRepository.GetAll()));
         }
 
+        [Route("developer-details/{id:guid}")]
         public async Task<IActionResult> Details(Guid id)
         {
             var developerViewModel = await GetDeveloperAddress(id);
@@ -36,11 +38,13 @@ namespace FH.App.Controllers
             return View(developerViewModel);
         }
 
+        [Route("new-developer")]
         public IActionResult Create()
         {
             return View();
         }
 
+        [Route("new-developer")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(DeveloperViewModel developerViewModel)
@@ -56,6 +60,7 @@ namespace FH.App.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [Route("developer-update/{id:guid}")]
         public async Task<IActionResult> Edit(Guid id)
         {
             var developerViewModel = await GetDeveloperGamesAddress(id);
@@ -68,6 +73,7 @@ namespace FH.App.Controllers
             return View(developerViewModel);
         }
 
+        [Route("developer-update/{id:guid}")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, DeveloperViewModel developerViewModel)
@@ -88,6 +94,7 @@ namespace FH.App.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [Route("developer-remove/{id:guid}")]
         public async Task<IActionResult> Delete(Guid id)
         {
             var developerViewModel = await GetDeveloperAddress(id);
@@ -100,6 +107,7 @@ namespace FH.App.Controllers
             return View(developerViewModel);
         }
 
+        [Route("developer-remove/{id:guid}")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
@@ -116,6 +124,7 @@ namespace FH.App.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [Route("developer-address-details/{id:guid}")]
         public async Task<IActionResult> GetAddress(Guid id)
         {
             var developer = await GetDeveloperAddress(id);
@@ -128,6 +137,7 @@ namespace FH.App.Controllers
             return PartialView("_AddressDetails", developer);
         }
 
+        [Route("developer-address-update/{id:guid}")]
         public async Task<IActionResult> UpdateAddress(Guid id)
         {
             var developer = await GetDeveloperAddress(id);
@@ -140,6 +150,7 @@ namespace FH.App.Controllers
             return PartialView("_UpdateAddress", new DeveloperViewModel { Address = developer.Address });
         }
 
+        [Route("developer-address-update/{id:guid}")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> UpdateAddress(DeveloperViewModel developerViewModel)

@@ -20,11 +20,13 @@ namespace FH.App.Controllers
             _developerRepository = developerRepository;
         }
 
+        [Route("game-list")]
         public async Task<IActionResult> Index()
         {
             return View(_mapper.Map<IEnumerable<GameViewModel>>(await _gameRepository.GetGamesDevelopers()));
         }
 
+        [Route("game-details/{id:guid}")]
         public async Task<IActionResult> Details(Guid id)
         {
             var gameViewModel = await GetGame(id);
@@ -37,12 +39,14 @@ namespace FH.App.Controllers
             return View(gameViewModel);
         }
 
+        [Route("new-game")]
         public async Task<IActionResult> Create()
         {
             var gameViewModel = await PopulateDeveloper(new GameViewModel());
             return View(gameViewModel);
         }
 
+        [Route("new-game")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(GameViewModel gameViewModel)
@@ -67,6 +71,7 @@ namespace FH.App.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [Route("game-update/{id:guid}")]
         public async Task<IActionResult> Edit(Guid id)
         {
             var gameViewModel = await GetGame(id);
@@ -79,6 +84,7 @@ namespace FH.App.Controllers
             return View(gameViewModel);
         }
 
+        [Route("game-update/{id:guid}")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, GameViewModel gameViewModel)
@@ -120,6 +126,7 @@ namespace FH.App.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [Route("game-remove/{id:guid}")]
         public async Task<IActionResult> Delete(Guid id)
         {
             var game = await GetGame(id);
@@ -132,6 +139,7 @@ namespace FH.App.Controllers
             return View(game);
         }
 
+        [Route("game-remove/{id:guid}")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
