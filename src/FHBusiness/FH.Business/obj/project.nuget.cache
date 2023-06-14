@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "pDtPEmyHIKop1IzD47v7Mg3Z2zDjFWrnnQqY1EGNQyDW6DnfXGEUvMFNl4CsaG9T6MSVlgILQQU0u1Z4nWb6Zw==",
+  "dgSpecHash": "e0zUh76EIkhKxfHauZg9EfeMtkxoF8ssKmT2yzkD2k+V+xsVxn+uSNi6D6ESAJi9zXiXSvMF2gdruCfHL59FZA==",
   "success": true,
   "projectFilePath": "D:\\Workplace\\VS Community\\CompleteMVC\\CompleteMVCApp\\src\\FHBusiness\\FH.Business\\FH.Business.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\fredd\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512"
+  ],
   "logs": []
 }

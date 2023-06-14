@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "OayR/WYDF4ZovYEnVrUnzjwouxk6jngRAPRMc44xCMKC+v6k7rayrYXCEhFsyFMuIC8RP678sV4vVw3hDkzICg==",
+  "dgSpecHash": "V3zgpjZTaK7X86f4sbyCQkfYJwpjY0qivv9oqlkLZ8dh66bkGa2u8z8CbQTjY1Q2d4OtBTBUEsKWSwmAm24Ung==",
   "success": true,
   "projectFilePath": "D:\\Workplace\\VS Community\\CompleteMVC\\CompleteMVCApp\\src\\FHApp\\FHApp\\FH.App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fredd\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\fredd\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
+    "C:\\Users\\fredd\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
     "C:\\Users\\fredd\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\fredd\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\fredd\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",

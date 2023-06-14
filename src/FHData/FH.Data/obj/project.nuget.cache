@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "/Mtfq+hFkHZQZ2O1L9aK3zuyM5WFRuYl0phYurBvLrEjwVmSOIQTSzuDJhz66yoZRzM4BBbwVrQbnO3ELWlSQQ==",
+  "dgSpecHash": "UFnO4lRO9x/JoQkiDXnPzwZNXIOZMPsLJz8Oby1wLcU/96W9Qe2LeuM9B55Dh/yKEwnPOyox6Hq+2rVr1VnQ/A==",
   "success": true,
   "projectFilePath": "D:\\Workplace\\VS Community\\CompleteMVC\\CompleteMVCApp\\src\\FHData\\FH.Data\\FH.Data.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\fredd\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
     "C:\\Users\\fredd\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\fredd\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\fredd\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
