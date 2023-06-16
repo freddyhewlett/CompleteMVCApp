@@ -1,29 +1,39 @@
 ﻿using FH.Business.Interfaces;
 using FH.Business.Models;
 using FH.Business.Models.Validations.Docs;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FH.Business.Services
 {
     public class GameService : BaseService, IGameService
     {
+        private readonly IGameRepository _gameRepository;
+        public GameService(IGameRepository gameRepository, INotificator notificator) : base(notificator)
+        {
+            _gameRepository = gameRepository;
+        }
+
         public async Task Add(Game game)
         {
             if (!ExecuteValidation(new GameValidation(), game)) return;
+
+            await _gameRepository.Add(game);
         }
 
-        public Task Remove(Guid id)
+        public async Task Remove(Guid id)
         {
-            throw new NotImplementedException();
+            await _gameRepository.Remove(id);
         }
 
         public async Task Update(Game game)
         {
             if (!ExecuteValidation(new GameValidation(), game)) return;
+
+            await _gameRepository.Update(game);
+        }
+
+        public void Dispose()
+        {
+            _gameRepository?.Dispose();
         }
     }
 }

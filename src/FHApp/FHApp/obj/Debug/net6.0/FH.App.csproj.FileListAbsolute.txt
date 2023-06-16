@@ -11,6 +11,7 @@ D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHApp\FHApp\bin\Debug\n
 D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHApp\FHApp\bin\Debug\net6.0\FH.App.pdb
 D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHApp\FHApp\bin\Debug\net6.0\AutoMapper.dll
 D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHApp\FHApp\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHApp\FHApp\bin\Debug\net6.0\FluentValidation.dll
 D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHApp\FHApp\bin\Debug\net6.0\Humanizer.dll
 D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHApp\FHApp\bin\Debug\net6.0\MessagePack.dll
 D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHApp\FHApp\bin\Debug\net6.0\MessagePack.Annotations.dll

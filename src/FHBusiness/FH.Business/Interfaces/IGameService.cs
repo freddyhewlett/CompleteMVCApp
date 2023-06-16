@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FH.Business.Interfaces
 {
-    public interface IGameService
+    public interface IGameService : IDisposable
     {
         Task Add(Game game);
         Task Update(Game game);

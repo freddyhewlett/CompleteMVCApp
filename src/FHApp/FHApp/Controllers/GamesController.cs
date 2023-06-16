@@ -11,13 +11,19 @@ namespace FH.App.Controllers
     {
         private readonly IGameRepository _gameRepository;
         private readonly IDeveloperRepository _developerRepository;
+        private readonly IGameService _gameService;
         private readonly IMapper _mapper;
 
-        public GamesController(IGameRepository gameRepository, IMapper mapper, IDeveloperRepository developerRepository)
+        public GamesController(IGameRepository gameRepository, 
+                               IMapper mapper, 
+                               IDeveloperRepository developerRepository, 
+                               IGameService gameService, 
+                               INotificator notificator) : base(notificator)
         {
             _gameRepository = gameRepository;
             _mapper = mapper;
             _developerRepository = developerRepository;
+            _gameService = gameService;
         }
 
         [Route("game-list")]
@@ -66,7 +72,9 @@ namespace FH.App.Controllers
             }
 
             gameViewModel.Image = imgPrefix + gameViewModel.ImageUpload.FileName;
-            await _gameRepository.Add(_mapper.Map<Game>(gameViewModel));
+            await _gameService.Add(_mapper.Map<Game>(gameViewModel));
+
+            if (!ValidOperation()) return View(gameViewModel);
 
             return RedirectToAction(nameof(Index));
         }
@@ -121,7 +129,9 @@ namespace FH.App.Controllers
             gameUpdate.Value = gameViewModel.Value;
             gameUpdate.Active = gameViewModel.Active;
 
-            await _gameRepository.Update(_mapper.Map<Game>(gameUpdate));
+            await _gameService.Update(_mapper.Map<Game>(gameUpdate));
+
+            if (!ValidOperation()) return View(gameViewModel);
 
             return RedirectToAction(nameof(Index));
         }
@@ -151,7 +161,11 @@ namespace FH.App.Controllers
                 return NotFound();
             }
 
-            await _gameRepository.Remove(id);
+            await _gameService.Remove(id);
+
+            if (!ValidOperation()) return View(game);
+
+            TempData["Success"] = "Jogo excluido com sucesso!";
 
             return RedirectToAction(nameof(Index));
         }

@@ -9,14 +9,17 @@ namespace FH.App.Controllers
     public class DevelopersController : BaseController
     {
         private readonly IDeveloperRepository _developerRepository;
-        private readonly IAddressRepository _addressRepository;
+        private readonly IDeveloperService _developerService;
         private readonly IMapper _mapper;
 
-        public DevelopersController(IDeveloperRepository developerRepository, IMapper mapper, IAddressRepository addressRepository)
+        public DevelopersController(IDeveloperRepository developerRepository, 
+                                    IMapper mapper, 
+                                    IDeveloperService developerService,
+                                    INotificator notificator) : base(notificator)
         {
             _developerRepository = developerRepository;
             _mapper = mapper;
-            _addressRepository = addressRepository;
+            _developerService = developerService;
         }
 
         [Route("developer-list")]
@@ -55,7 +58,9 @@ namespace FH.App.Controllers
             }
 
             var developer = _mapper.Map<Developer>(developerViewModel);
-            await _developerRepository.Add(developer);
+            await _developerService.Add(developer);
+
+            if (!ValidOperation()) return View(developerViewModel);
 
             return RedirectToAction(nameof(Index));
         }
@@ -89,7 +94,9 @@ namespace FH.App.Controllers
             }
 
             var developer = _mapper.Map<Developer>(developerViewModel);
-            await _developerRepository.Update(developer);
+            await _developerService.Update(developer);
+
+            if (!ValidOperation()) return View(await GetDeveloperGamesAddress(id));
 
             return RedirectToAction(nameof(Index));
         }
@@ -119,7 +126,9 @@ namespace FH.App.Controllers
                 return NotFound();
             }
 
-            await _developerRepository.Remove(id);
+            await _developerService.Remove(id);
+
+            if (!ValidOperation()) return View(developerViewModel);
 
             return RedirectToAction(nameof(Index));
         }
@@ -160,7 +169,9 @@ namespace FH.App.Controllers
 
             if (!ModelState.IsValid) return PartialView("_UpdateAddress", developerViewModel);
 
-            await _addressRepository.Update(_mapper.Map<Address>(developerViewModel.Address));
+            await _developerService.AddressUpdate(_mapper.Map<Address>(developerViewModel.Address));
+
+            if (!ValidOperation()) return PartialView("_UpdateAddress", developerViewModel);
 
             var url = Url.Action("GetAddress", "Developers", new { id = developerViewModel.Address.DeveloperId });
 

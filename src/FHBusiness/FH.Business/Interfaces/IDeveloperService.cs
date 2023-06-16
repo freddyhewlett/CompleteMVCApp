@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FH.Business.Interfaces
 {
-    public interface IDeveloperService
+    public interface IDeveloperService : IDisposable
     {
         Task Add(Developer developer);
         Task Update(Developer developer);

@@ -1,20 +1,24 @@
-﻿using FH.Business.Models;
+﻿using FH.Business.Interfaces;
+using FH.Business.Models;
+using FH.Business.Notifications;
 using FluentValidation;
 using FluentValidation.Results;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FH.Business.Services
 {
     public abstract class BaseService
     {
+        private readonly INotificator _notificator;
+
+        public BaseService(INotificator notificator)
+        {
+            _notificator = notificator;
+        }
+
         //leva um erro a camada de apresentação (FH.App)
         protected void Notify(string message) 
         {
-            //TODO
+            _notificator.Handle(new Notification(message));
         }
 
         protected void Notify(ValidationResult validationResult) 
