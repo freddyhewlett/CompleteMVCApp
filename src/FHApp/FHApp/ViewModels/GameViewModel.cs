@@ -26,6 +26,7 @@ namespace FH.App.ViewModels
         public string Description { get; set; }
 
         [DisplayName("Imagem do jogo")]
+        [NotMapped]
         public IFormFile ImageUpload { get; set; }
 
         public string Image { get; set; }

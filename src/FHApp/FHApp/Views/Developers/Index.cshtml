@@ -7,7 +7,7 @@
 
 <h1>@ViewData["Title"]</h1>
 
-<p>
+<p supress-by-claim-name="Developer" supress-by-claim-value="Add">
     <a class="btn btn-info" asp-action="Create">Novo desenvolvedor</a>
 </p>
 <table class="table table-hover">
@@ -40,8 +40,8 @@
                 </td>
                 <td class="text-right">
                     <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id"><spam class="fa fa-search"></spam></a>
-                    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id"><spam class="fa fa-pencil-alt"></spam></a>
-                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id"><spam class="fa fa-trash"></spam></a>
+                    <a class="btn btn-warning" disable-by-claim-name="Developer" disable-by-claim-value="Edit" asp-action="Edit" asp-route-id="@item.Id"><spam class="fa fa-pencil-alt"></spam></a>
+                    <a class="btn btn-danger" supress-by-claim-name="Developer" supress-by-claim-value="Remove" asp-action="Delete" asp-route-id="@item.Id"><spam class="fa fa-trash"></spam></a>
                 </td>
             </tr>
         }

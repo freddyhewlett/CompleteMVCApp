@@ -4,9 +4,12 @@ using FH.Business.Interfaces;
 using AutoMapper;
 using FH.Business.Models;
 using System.Net;
+using Microsoft.AspNetCore.Authorization;
+using FH.App.Extensions.Identity;
 
 namespace FH.App.Controllers
 {
+    [Authorize]
     public class GamesController : BaseController
     {
         private readonly IGameRepository _gameRepository;
@@ -26,12 +29,14 @@ namespace FH.App.Controllers
             _gameService = gameService;
         }
 
+        [AllowAnonymous]
         [Route("game-list")]
         public async Task<IActionResult> Index()
         {
             return View(_mapper.Map<IEnumerable<GameViewModel>>(await _gameRepository.GetGamesDevelopers()));
         }
 
+        [AllowAnonymous]
         [Route("game-details/{id:guid}")]
         public async Task<IActionResult> Details(Guid id)
         {
@@ -45,6 +50,7 @@ namespace FH.App.Controllers
             return View(gameViewModel);
         }
 
+        [ClaimsAuthorize("Game","Add")]
         [Route("new-game")]
         public async Task<IActionResult> Create()
         {
@@ -52,6 +58,7 @@ namespace FH.App.Controllers
             return View(gameViewModel);
         }
 
+        [ClaimsAuthorize("Game", "Add")]
         [Route("new-game")]
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -79,6 +86,7 @@ namespace FH.App.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [ClaimsAuthorize("Game", "Edit")]
         [Route("game-update/{id:guid}")]
         public async Task<IActionResult> Edit(Guid id)
         {
@@ -92,6 +100,7 @@ namespace FH.App.Controllers
             return View(gameViewModel);
         }
 
+        [ClaimsAuthorize("Game", "Edit")]
         [Route("game-update/{id:guid}")]
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -136,6 +145,7 @@ namespace FH.App.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [ClaimsAuthorize("Game", "Remove")]
         [Route("game-remove/{id:guid}")]
         public async Task<IActionResult> Delete(Guid id)
         {
@@ -149,6 +159,7 @@ namespace FH.App.Controllers
             return View(game);
         }
 
+        [ClaimsAuthorize("Game", "Remove")]
         [Route("game-remove/{id:guid}")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]

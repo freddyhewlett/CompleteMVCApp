@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dandbJWvvenYBU9HtrDMMNTJ5teSToL8wxRukPgyykI=",
+  "Hash": "SC0+ECxviDLXq1bs+GZFCpUO3WQYYEPh7npmKnmZNlc=",
   "Source": "FH.App",
   "BasePath": "_content/FH.App",
   "Mode": "Default",
@@ -1103,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Workplace\\VS Community\\CompleteMVC\\CompleteMVCApp\\src\\FHApp\\FHApp\\wwwroot\\images\\0a9a7393-8f66-4826-9e38-9aa79775a159_Assassin's Creed® Origins2022-10-14-21-4-25.jpg",
+      "SourceId": "FH.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Workplace\\VS Community\\CompleteMVC\\CompleteMVCApp\\src\\FHApp\\FHApp\\wwwroot\\",
+      "BasePath": "_content/FH.App",
+      "RelativePath": "images/0a9a7393-8f66-4826-9e38-9aa79775a159_Assassin's Creed® Origins2022-10-14-21-4-25.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\0a9a7393-8f66-4826-9e38-9aa79775a159_Assassin's Creed® Origins2022-10-14-21-4-25.jpg"
     },
     {
       "Identity": "D:\\Workplace\\VS Community\\CompleteMVC\\CompleteMVCApp\\src\\FHApp\\FHApp\\wwwroot\\images\\4afdb54e-c280-4eaf-a5ed-f4f7a1f7e03e_RDR2.jpg",
