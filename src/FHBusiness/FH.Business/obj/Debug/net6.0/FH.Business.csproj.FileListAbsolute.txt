@@ -10,3 +10,15 @@ D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHBusiness\FH.Business\
 D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHBusiness\FH.Business\obj\Debug\net6.0\refint\FH.Business.dll
 D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHBusiness\FH.Business\obj\Debug\net6.0\FH.Business.pdb
 D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHBusiness\FH.Business\obj\Debug\net6.0\ref\FH.Business.dll
+D:\Workspace\CompleteMVCApp\src\FHBusiness\FH.Business\bin\Debug\net6.0\FH.Business.deps.json
+D:\Workspace\CompleteMVCApp\src\FHBusiness\FH.Business\bin\Debug\net6.0\FH.Business.dll
+D:\Workspace\CompleteMVCApp\src\FHBusiness\FH.Business\bin\Debug\net6.0\FH.Business.pdb
+D:\Workspace\CompleteMVCApp\src\FHBusiness\FH.Business\obj\Debug\net6.0\FH.Business.csproj.AssemblyReference.cache
+D:\Workspace\CompleteMVCApp\src\FHBusiness\FH.Business\obj\Debug\net6.0\FH.Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspace\CompleteMVCApp\src\FHBusiness\FH.Business\obj\Debug\net6.0\FH.Business.AssemblyInfoInputs.cache
+D:\Workspace\CompleteMVCApp\src\FHBusiness\FH.Business\obj\Debug\net6.0\FH.Business.AssemblyInfo.cs
+D:\Workspace\CompleteMVCApp\src\FHBusiness\FH.Business\obj\Debug\net6.0\FH.Business.csproj.CoreCompileInputs.cache
+D:\Workspace\CompleteMVCApp\src\FHBusiness\FH.Business\obj\Debug\net6.0\FH.Business.dll
+D:\Workspace\CompleteMVCApp\src\FHBusiness\FH.Business\obj\Debug\net6.0\refint\FH.Business.dll
+D:\Workspace\CompleteMVCApp\src\FHBusiness\FH.Business\obj\Debug\net6.0\FH.Business.pdb
+D:\Workspace\CompleteMVCApp\src\FHBusiness\FH.Business\obj\Debug\net6.0\ref\FH.Business.dll

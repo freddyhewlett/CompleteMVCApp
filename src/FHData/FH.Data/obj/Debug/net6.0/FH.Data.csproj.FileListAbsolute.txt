@@ -13,3 +13,18 @@ D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHData\FH.Data\obj\Debu
 D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHData\FH.Data\obj\Debug\net6.0\refint\FH.Data.dll
 D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHData\FH.Data\obj\Debug\net6.0\FH.Data.pdb
 D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHData\FH.Data\obj\Debug\net6.0\ref\FH.Data.dll
+D:\Workspace\CompleteMVCApp\src\FHData\FH.Data\bin\Debug\net6.0\FH.Data.deps.json
+D:\Workspace\CompleteMVCApp\src\FHData\FH.Data\bin\Debug\net6.0\FH.Data.dll
+D:\Workspace\CompleteMVCApp\src\FHData\FH.Data\bin\Debug\net6.0\FH.Data.pdb
+D:\Workspace\CompleteMVCApp\src\FHData\FH.Data\bin\Debug\net6.0\FH.Business.dll
+D:\Workspace\CompleteMVCApp\src\FHData\FH.Data\bin\Debug\net6.0\FH.Business.pdb
+D:\Workspace\CompleteMVCApp\src\FHData\FH.Data\obj\Debug\net6.0\FH.Data.csproj.AssemblyReference.cache
+D:\Workspace\CompleteMVCApp\src\FHData\FH.Data\obj\Debug\net6.0\FH.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspace\CompleteMVCApp\src\FHData\FH.Data\obj\Debug\net6.0\FH.Data.AssemblyInfoInputs.cache
+D:\Workspace\CompleteMVCApp\src\FHData\FH.Data\obj\Debug\net6.0\FH.Data.AssemblyInfo.cs
+D:\Workspace\CompleteMVCApp\src\FHData\FH.Data\obj\Debug\net6.0\FH.Data.csproj.CoreCompileInputs.cache
+D:\Workspace\CompleteMVCApp\src\FHData\FH.Data\obj\Debug\net6.0\FH.Data.csproj.CopyComplete
+D:\Workspace\CompleteMVCApp\src\FHData\FH.Data\obj\Debug\net6.0\FH.Data.dll
+D:\Workspace\CompleteMVCApp\src\FHData\FH.Data\obj\Debug\net6.0\refint\FH.Data.dll
+D:\Workspace\CompleteMVCApp\src\FHData\FH.Data\obj\Debug\net6.0\FH.Data.pdb
+D:\Workspace\CompleteMVCApp\src\FHData\FH.Data\obj\Debug\net6.0\ref\FH.Data.dll
