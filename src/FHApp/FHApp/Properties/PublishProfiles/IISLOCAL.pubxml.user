@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+    <History>True|2023-07-03T19:29:50.1438346Z;True|2023-07-03T16:25:17.9001366-03:00;True|2023-07-03T16:22:57.4621777-03:00;True|2023-07-03T16:21:08.5034085-03:00;True|2023-07-03T13:49:53.5351769-03:00;True|2023-07-03T13:49:28.3462135-03:00;True|2023-07-03T13:43:46.4846495-03:00;True|2023-07-03T13:40:26.4083540-03:00;True|2023-07-03T13:33:08.1201559-03:00;True|2023-07-03T13:08:35.9343058-03:00;False|2023-07-03T12:41:29.5496410-03:00;True|2023-07-03T12:38:49.4539275-03:00;True|2023-07-03T12:37:27.0603635-03:00;True|2023-07-03T12:34:12.7292968-03:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=DESKTOP-5VMEJNB\\SQLEXPRESS%3bDatabase=CompleteMVCAppDB%3bTrusted_Connection=True%3bMultipleActiveResultSets=true</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

@@ -8,45 +8,105 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FH.App
 build_property.RootNamespace = FH.App
-build_property.ProjectDir = D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHApp\FHApp\
+build_property.ProjectDir = D:\Workspace\CompleteMVCApp\src\FHApp\FHApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Workplace\VS Community\CompleteMVC\CompleteMVCApp\src\FHApp\FHApp
+build_property.MSBuildProjectDirectory = D:\Workspace\CompleteMVCApp\src\FHApp\FHApp
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Workplace/VS Community/CompleteMVC/CompleteMVCApp/src/FHApp/FHApp/Areas/Identity/Pages/_ViewStart.cshtml]
+[D:/Workspace/CompleteMVCApp/src/FHApp/FHApp/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Workplace/VS Community/CompleteMVC/CompleteMVCApp/src/FHApp/FHApp/Views/Home/Index.cshtml]
+[D:/Workspace/CompleteMVCApp/src/FHApp/FHApp/Views/Developers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2ZWxvcGVyc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/CompleteMVCApp/src/FHApp/FHApp/Views/Developers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2ZWxvcGVyc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/CompleteMVCApp/src/FHApp/FHApp/Views/Developers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2ZWxvcGVyc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/CompleteMVCApp/src/FHApp/FHApp/Views/Developers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2ZWxvcGVyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/CompleteMVCApp/src/FHApp/FHApp/Views/Developers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2ZWxvcGVyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/CompleteMVCApp/src/FHApp/FHApp/Views/Developers/_Address.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2ZWxvcGVyc1xfQWRkcmVzcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/CompleteMVCApp/src/FHApp/FHApp/Views/Developers/_AddressDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2ZWxvcGVyc1xfQWRkcmVzc0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/CompleteMVCApp/src/FHApp/FHApp/Views/Developers/_UpdateAddress.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2ZWxvcGVyc1xfVXBkYXRlQWRkcmVzcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/CompleteMVCApp/src/FHApp/FHApp/Views/Games/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/CompleteMVCApp/src/FHApp/FHApp/Views/Games/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/CompleteMVCApp/src/FHApp/FHApp/Views/Games/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/CompleteMVCApp/src/FHApp/FHApp/Views/Games/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/CompleteMVCApp/src/FHApp/FHApp/Views/Games/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/CompleteMVCApp/src/FHApp/FHApp/Views/Games/_GameList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZXNcX0dhbWVMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/CompleteMVCApp/src/FHApp/FHApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Workplace/VS Community/CompleteMVC/CompleteMVCApp/src/FHApp/FHApp/Views/Home/Privacy.cshtml]
+[D:/Workspace/CompleteMVCApp/src/FHApp/FHApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Workplace/VS Community/CompleteMVC/CompleteMVCApp/src/FHApp/FHApp/Views/Shared/Error.cshtml]
+[D:/Workspace/CompleteMVCApp/src/FHApp/FHApp/Views/Shared/Components/Summary/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU3VtbWFyeVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/CompleteMVCApp/src/FHApp/FHApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Workplace/VS Community/CompleteMVC/CompleteMVCApp/src/FHApp/FHApp/Views/Shared/_LoginPartial.cshtml]
+[D:/Workspace/CompleteMVCApp/src/FHApp/FHApp/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Workplace/VS Community/CompleteMVC/CompleteMVCApp/src/FHApp/FHApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Workspace/CompleteMVCApp/src/FHApp/FHApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Workplace/VS Community/CompleteMVC/CompleteMVCApp/src/FHApp/FHApp/Views/_ViewImports.cshtml]
+[D:/Workspace/CompleteMVCApp/src/FHApp/FHApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Workplace/VS Community/CompleteMVC/CompleteMVCApp/src/FHApp/FHApp/Views/_ViewStart.cshtml]
+[D:/Workspace/CompleteMVCApp/src/FHApp/FHApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Workplace/VS Community/CompleteMVC/CompleteMVCApp/src/FHApp/FHApp/Views/Shared/_Layout.cshtml]
+[D:/Workspace/CompleteMVCApp/src/FHApp/FHApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-vboyybzo5x
