@@ -19,7 +19,7 @@ namespace FH.App.Configurations
                 o.ModelBindingMessageProvider.SetValueMustBeANumberAccessor(x => "O campo deve ser numérico.");
                 o.ModelBindingMessageProvider.SetValueMustNotBeNullAccessor(x => "Este campo precisa ser preenchido.");
 
-                o.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
+                o.Filters.Add(new AutoValidateAntiforgeryTokenAttribute()); // configura o [ValidateAntiForgeryToken] em todos os POST das controllers
             });
 
             return services;

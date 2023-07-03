@@ -56,7 +56,7 @@ namespace FH.App.Controllers
         [ClaimsAuthorize("Developer", "Add")]
         [Route("new-developer")]
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        //[ValidateAntiForgeryToken] -- Por segurança, este campo deve estar ativo em todos os [POST], mas já está configurado em Configurations > MvcConfig.cs
         public async Task<IActionResult> Create(DeveloperViewModel developerViewModel)
         {
             if (!ModelState.IsValid)
@@ -89,7 +89,6 @@ namespace FH.App.Controllers
         [ClaimsAuthorize("Developer", "Edit")]
         [Route("developer-update/{id:guid}")]
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, DeveloperViewModel developerViewModel)
         {
             if (id != developerViewModel.Id)
@@ -127,7 +126,6 @@ namespace FH.App.Controllers
         [ClaimsAuthorize("Developer", "Remove")]
         [Route("developer-remove/{id:guid}")]
         [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
             var developerViewModel = await GetDeveloperAddress(id);
@@ -175,7 +173,6 @@ namespace FH.App.Controllers
         [ClaimsAuthorize("Developer", "Edit")]
         [Route("developer-address-update/{id:guid}")]
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> UpdateAddress(DeveloperViewModel developerViewModel)
         {
             ModelState.Remove("Name");

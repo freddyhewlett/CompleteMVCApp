@@ -61,7 +61,6 @@ namespace FH.App.Controllers
         [ClaimsAuthorize("Game", "Add")]
         [Route("new-game")]
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(GameViewModel gameViewModel)
         {
             gameViewModel = await PopulateDeveloper(gameViewModel);
@@ -103,7 +102,6 @@ namespace FH.App.Controllers
         [ClaimsAuthorize("Game", "Edit")]
         [Route("game-update/{id:guid}")]
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, GameViewModel gameViewModel)
         {
             if (id != gameViewModel.Id)
@@ -162,7 +160,6 @@ namespace FH.App.Controllers
         [ClaimsAuthorize("Game", "Remove")]
         [Route("game-remove/{id:guid}")]
         [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
             var game = await GetGame(id);
